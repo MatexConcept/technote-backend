@@ -1,0 +1,49 @@
+2023-06-01		13:10:42	6902f832-d979-4907-a2a6-d730c71951fd	 Error: Not allowed by CORS	OPTIONS	/	https://www.google.com 
+2023-06-01		13:10:42	42bc94de-e6d8-4d98-ba1f-310d7d26ab15	 Error: Not allowed by CORS	GET	/	https://www.google.com 
+2023-06-01		13:12:32	0008ba16-1330-45ba-8222-59e3292a815b	 Error: Not allowed by CORS	OPTIONS	/	https://www.google.com 
+2023-06-01		13:12:32	57ec119e-cf29-4de5-8394-a2205d91fac0	 Error: Not allowed by CORS	GET	/	https://www.google.com 
+2023-06-01		13:15:05	b4ad9aaf-e955-42c2-b82c-ba5a0d5efd9e	 Error: Not allowed by CORS	OPTIONS	/	https://www.google.com 
+2023-06-01		13:15:05	59b1bcf9-4ad5-4da8-94ae-bc11594c25c8	 Error: Not allowed by CORS	GET	/	https://www.google.com 
+2023-06-01		13:18:53	26b9ab9a-017c-4cf4-8a8c-0257630c924e	 Error: Not allowed by CORS	OPTIONS	/	https://www.google.com 
+2023-06-01		13:18:53	4a5ed6e1-d95e-4cff-8660-397f578f266a	 Error: Not allowed by CORS	GET	/	https://www.google.com 
+2023-06-02		12:29:56	1b51d7c5-1838-4131-b32b-56e135c80ddc	 SyntaxError: Expected ':' after property name in JSON at position 71	POST	/users	undefined 
+2023-06-02		12:30:49	809d840c-de32-418b-a786-1b5324ac4301	 SyntaxError: Expected ':' after property name in JSON at position 66	POST	/users	undefined 
+2023-06-05		09:32:35	a51a6ec7-7af7-4bb0-af0b-c247847d5950	 TypeError: Cannot read properties of undefined (reading 'length')	PATCH	/users	undefined 
+2023-06-05		09:48:50	ac8c9fd5-90dd-4f17-90d2-2fb28e0acc65	 CastError: Cast to ObjectId failed for value "" (type string) at path "user" for model "Note"	DELETE	/users	undefined 
+2023-06-05		10:48:42	65ab2646-8fd4-4abf-b19a-62179dc73267	 ValidationError: Note validation failed: user: Cast to ObjectId failed for value "mubs" (type string) at path "user" because of "BSONError"	POST	/notes	undefined 
+2023-06-05		10:56:35	be65cb9c-aaef-4757-a42a-3fc207f29fd7	 SyntaxError: Unexpected token '}', "
+
+
+
+#" is not valid JSON	PATCH	/notes	undefined 
+2023-06-05		10:56:42	cbdab515-4a57-4458-a965-07405f410c11	 SyntaxError: Unexpected end of JSON input	PATCH	/notes	undefined 
+2023-06-06		13:09:37	868ca0a3-f760-4f0d-bdaa-4039e690dfef	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:13:55	c21ec591-725e-49d8-a5c3-3f38b3c9187b	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:13:56	4333b061-790a-48c6-8370-dd5805fa7b9c	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:13:58	40c7ceec-6e65-4af3-882d-483adc321833	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:13:59	00ebdcc7-9aa1-4092-b534-99f9c20bed15	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:13:59	509403a0-9c94-428d-bfcc-71a228e743ab	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:14:00	7b5397ab-e07a-41e4-bfab-d310a53ecd2a	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:14:01	f6b65206-085c-470b-9c7b-50c8713c62f5	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:14:01	0780ad2d-e65a-47ba-b1a4-78d11302a2e1	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:14:02	f4a3a064-5bdf-4bdb-9a4a-82410359d57e	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:14:13	f43d5b52-c55f-467a-a4ca-f4027021067e	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:16:36	bb7bcb7b-11c9-47d2-a631-cafd8cb6cab0	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:21:45	68a77b69-c2b4-42ec-a0c8-9035453fb7a7	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:21:47	48826124-ecce-4cab-a21b-ef036e4f874a	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:22:07	c9670392-f769-48e5-9448-130580aa3b5f	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-06		13:30:04	bbe92253-2efc-4808-9fd0-11392b700083	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-00.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-06		14:18:48	331113b5-cc90-4d6c-b98a-2fa780665e3e	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-00.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-06		14:19:16	5996ba84-4e29-4f19-8203-fd8b6eefb094	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-00.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-06		15:19:44	7e9bf609-6ba8-4c72-8a52-8fe7b8c64846	 Error: Not allowed by CORS	GET	/users	http://localhost:5174 
+2023-06-06		16:13:15	bb0a8cd4-ec07-4686-b9d3-fddfd58995e9	 Error: Not allowed by CORS	GET	/users	http://localhost:5174 
+2023-06-06		16:13:15	498e82b8-3d50-4f7a-83b6-72756a881165	 Error: Not allowed by CORS	GET	/users	http://localhost:5175 
+2023-06-06		16:13:18	b3efd69c-d831-4a20-adcc-19b2edc04957	 Error: Not allowed by CORS	GET	/users	http://localhost:5175 
+2023-06-06		16:13:20	78227e2a-4637-4324-93d8-54d530e865cd	 Error: Not allowed by CORS	GET	/users	http://localhost:5175 
+2023-06-06		16:13:29	0840b9a8-9d37-44fb-9e21-912b000eef98	 Error: Not allowed by CORS	GET	/users	http://localhost:5175 
+2023-06-06		16:23:41	78abd0cb-b9a8-4335-af40-419de08dc34e	 Error: Not allowed by CORS	GET	/notes	http://localhost:5174 
+2023-06-06		16:24:26	83c5521a-7e97-4891-aae4-71c7eb19e284	 Error: Not allowed by CORS	GET	/notes	http://localhost:5174 
+2023-06-06		16:24:28	93c5ce2d-12c3-46b5-b6a4-a1a3a821228e	 Error: Not allowed by CORS	GET	/notes	http://localhost:5174 
+2023-06-06		16:24:47	28485eef-e30e-4255-964f-61bde8cddbb8	 Error: Not allowed by CORS	GET	/users	http://localhost:5174 
+2023-06-07		15:27:35	972fd478-3b19-4089-9356-acd9debd5110	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
+2023-06-07		15:27:42	5c226b6f-f06e-4647-ad96-f89f0cca6b0a	 Error: Not allowed by CORS	GET	/notes	http://localhost:5173 
