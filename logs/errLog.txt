@@ -47,3 +47,224 @@
 2023-06-06		16:24:47	28485eef-e30e-4255-964f-61bde8cddbb8	 Error: Not allowed by CORS	GET	/users	http://localhost:5174 
 2023-06-07		15:27:35	972fd478-3b19-4089-9356-acd9debd5110	 Error: Not allowed by CORS	GET	/users	http://localhost:5173 
 2023-06-07		15:27:42	5c226b6f-f06e-4647-ad96-f89f0cca6b0a	 Error: Not allowed by CORS	GET	/notes	http://localhost:5173 
+2023-06-08		09:42:43	934e4407-93dc-437a-8fbf-f05701fda917	 ValidationError: Note validation failed: user: Cast to ObjectId failed for value "olajide" (type string) at path "user" because of "BSONError"	POST	/notes	undefined 
+2023-06-08		09:43:56	1620e575-578b-4aee-92b3-7342f48f7d42	 SyntaxError: Unexpected end of JSON input	GET	/users	undefined 
+2023-06-08		10:03:37	16f6184b-fb58-4bef-9ffb-3f12bfbf2647	 MongoServerSelectionError: connection timed out	GET	/notes	http://localhost:5173 
+2023-06-08		10:05:38	f230bb8f-d5d7-4c8a-bc1c-9af9de91336e	 MongoServerSelectionError: read ECONNRESET	GET	/notes	http://localhost:5173 
+2023-06-08		10:06:31	d86bbda5-eaf3-43cc-ade4-4e7d827007a7	 MongoServerSelectionError: read ECONNRESET	GET	/notes	http://localhost:5173 
+2023-06-08		10:06:54	c41d403c-8322-4fe1-a548-35d0ebf8bf05	 MongoServerSelectionError: read ECONNRESET	GET	/notes	http://localhost:5173 
+2023-06-08		10:21:32	254dfd7d-144e-4530-96c0-cd9d346853bb	 MongoServerSelectionError: connection <monitor> to 15.188.243.8:27017 timed out	GET	/notes	http://localhost:5173 
+2023-06-08		10:42:29	415e96e7-b631-4912-bec4-3fa897e8306d	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/notes	http://localhost:5173 
+2023-06-08		10:43:12	27366744-02cd-4fd2-88f5-dc5a1b68912e	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-08		10:44:19	1abd9fa0-b7a2-4dda-a19c-8a9a09607bce	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-08		16:00:22	7da6cdcf-67b8-4216-af57-e7bb51bc3bec	 SyntaxError: Expected double-quoted property name in JSON at position 60	POST	/users	undefined 
+2023-06-14		10:43:24	c7594dba-00ed-41ee-9b3b-c03a67b1dbe9	 MongoServerSelectionError: connection <monitor> to 13.36.133.37:27017 timed out	GET	/notes	http://localhost:5173 
+2023-06-14		10:53:36	96c2b1cf-1d80-4b1f-85fd-8cfd24c90b97	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-00.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		11:42:30	2238f15f-eb1e-4102-8c6c-e92c59380b85	 ValidationError: Note validation failed: user: Cast to ObjectId failed for value "[
+  {
+    _id: '647d9b13681ffa1840632462',
+    username: 'abui',
+    roles: [ 'Employee' ],
+    active: false,
+    __v: 0,
+    id: '647d9b13681ffa1840632462'
+  },
+  {
+    _id: '647f36b6956120044d8aacb2',
+    username: 'lilwest',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '647f36b6956120044d8aacb2'
+  },
+  {
+    _id: '6481ee6da5f89f2866c02841',
+    username: 'matex',
+    roles: [ 'Employee' ],
+    id: '6481ee6da5f89f2866c02841'
+  },
+  {
+    _id: '6481f0408c1baf3c75490d62',
+    username: 'jago',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '6481f0408c1baf3c75490d62'
+  },
+  {
+    _id: '64887e918b5e1b59d30b1b4f',
+    username: 'Abu',
+    roles: [ 'Manager' ],
+    active: true,
+    __v: 0,
+    id: '64887e918b5e1b59d30b1b4f'
+  },
+  {
+    _id: '64887eba8b5e1b59d30b1b59',
+    username: 'Matexzy',
+    roles: [ 'Admin' ],
+    active: true,
+    __v: 0,
+    id: '64887eba8b5e1b59d30b1b59'
+  },
+  {
+    _id: '64887efc8b5e1b59d30b1b65',
+    username: 'kingdavid',
+    roles: [ 'Manager' ],
+    active: true,
+    __v: 0,
+    id: '64887efc8b5e1b59d30b1b65'
+  },
+  {
+    _id: '648982676812e7381fbab540',
+    username: 'opasco911',
+    roles: [ 'Admin' ],
+    active: true,
+    __v: 0,
+    id: '648982676812e7381fbab540'
+  }
+]" (type Array) at path "user" because of "BSONError"	POST	/notes	http://localhost:5173 
+2023-06-14		11:46:45	a1eb4033-dedf-4cd1-80be-aed129fceabb	 ValidationError: Note validation failed: user: Cast to ObjectId failed for value "[
+  {
+    _id: '647d9b13681ffa1840632462',
+    username: 'abui',
+    roles: [ 'Employee' ],
+    active: false,
+    __v: 0,
+    id: '647d9b13681ffa1840632462'
+  },
+  {
+    _id: '647f36b6956120044d8aacb2',
+    username: 'lilwest',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '647f36b6956120044d8aacb2'
+  },
+  {
+    _id: '6481ee6da5f89f2866c02841',
+    username: 'matex',
+    roles: [ 'Employee' ],
+    id: '6481ee6da5f89f2866c02841'
+  },
+  {
+    _id: '6481f0408c1baf3c75490d62',
+    username: 'jago',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '6481f0408c1baf3c75490d62'
+  },
+  {
+    _id: '64887e918b5e1b59d30b1b4f',
+    username: 'Abu',
+    roles: [ 'Manager' ],
+    active: true,
+    __v: 0,
+    id: '64887e918b5e1b59d30b1b4f'
+  },
+  {
+    _id: '64887eba8b5e1b59d30b1b59',
+    username: 'Matexzy',
+    roles: [ 'Admin' ],
+    active: true,
+    __v: 0,
+    id: '64887eba8b5e1b59d30b1b59'
+  },
+  {
+    _id: '64887efc8b5e1b59d30b1b65',
+    username: 'kingdavid',
+    roles: [ 'Manager' ],
+    active: true,
+    __v: 0,
+    id: '64887efc8b5e1b59d30b1b65'
+  },
+  {
+    _id: '648982676812e7381fbab540',
+    username: 'opasco911',
+    roles: [ 'Admin' ],
+    active: true,
+    __v: 0,
+    id: '648982676812e7381fbab540'
+  }
+]" (type Array) at path "user" because of "BSONError"	POST	/notes	http://localhost:5173 
+2023-06-14		11:48:00	a5fff81a-d53b-47a9-8278-375de30aa796	 ValidationError: Note validation failed: user: Cast to ObjectId failed for value "[
+  {
+    _id: '647d9b13681ffa1840632462',
+    username: 'abui',
+    roles: [ 'Employee' ],
+    active: false,
+    __v: 0,
+    id: '647d9b13681ffa1840632462'
+  },
+  {
+    _id: '647f36b6956120044d8aacb2',
+    username: 'lilwest',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '647f36b6956120044d8aacb2'
+  },
+  {
+    _id: '6481ee6da5f89f2866c02841',
+    username: 'matex',
+    roles: [ 'Employee' ],
+    id: '6481ee6da5f89f2866c02841'
+  },
+  {
+    _id: '6481f0408c1baf3c75490d62',
+    username: 'jago',
+    roles: [ 'Employee' ],
+    active: true,
+    __v: 0,
+    id: '6481f0408c1baf3c75490d62'
+  },
+  {
+    _id: '64887e918b5e1b59d30b1b4f',
+    username: 'Abu',
+    roles: [ 'Manager' ],
+    active: true,
+    __v: 0,
+    id: '64887e918b5e1b59d30b1b4f'
+  },
+  {
+    _id: '64887eba8b5e1b59d30b1b59',
+    username: 'Matexzy',
+    roles: [ 'Admin' ],
+    active: true,
+    __v: 0,
+    id: '64887eba8b5e1b59d30b1b59'
+  },
+  {
+    _id: '64887efc8b5e1b59d30b1b65',
+    username: 'kingdavid',
+    roles: [ 'Manager' ],
+    active: true,
+    __v: 0,
+    id: '64887efc8b5e1b59d30b1b65'
+  },
+  {
+    _id: '648982676812e7381fbab540',
+    username: 'opasco911',
+    roles: [ 'Admin' ],
+    active: true,
+    __v: 0,
+    id: '648982676812e7381fbab540'
+  }
+]" (type Array) at path "user" because of "BSONError"	POST	/notes	http://localhost:5173 
+2023-06-14		12:27:49	d48c5ebe-1992-42c0-b4c2-300e54413b25	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/notes	http://localhost:5173 
+2023-06-14		12:27:49	3e86e46c-fa47-47fc-9663-4390ce2f389e	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/notes	http://localhost:5173 
+2023-06-14		12:27:49	f16fac8e-da05-4db2-aac3-3648306331f4	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		12:27:51	2c3b1006-7734-4439-9e33-1d3b720770b2	 SyntaxError: Unexpected non-whitespace character after JSON at position 181	DELETE	/users	undefined 
+2023-06-14		12:27:51	e3f609f8-9a36-4a57-b384-222b5f7645f0	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		12:28:50	ab3f8880-cf2c-4517-945b-f23bc912fad3	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		12:30:21	fbfded3f-35bb-463a-8676-a10e506b2f75	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		12:31:52	7c0fa8ae-6864-4c85-9fce-43f909d7fcb3	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		12:33:23	32082a52-0cfe-4775-970f-6d8170e67183	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		12:34:54	dff74c3d-eea6-4155-b9c0-c1a848144099	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		12:36:25	26ac5ee3-df43-4ade-a073-228a605241c0	 MongoServerSelectionError: getaddrinfo ENOTFOUND ac-1wf4yx4-shard-00-02.r9dkrxk.mongodb.net	GET	/users	http://localhost:5173 
+2023-06-14		14:16:16	35977cd6-b601-4dd3-9c68-06686ef4295d	 Error: Cannot set headers after they are sent to the client	DELETE	/users	undefined 
+2023-06-14		14:16:23	b6471d25-acce-4562-bc7a-59ccb7d29379	 Error: Cannot set headers after they are sent to the client	DELETE	/users	undefined 
+2023-06-14		14:17:02	41efd675-3faf-4d7d-8b78-4fbfdedf8b5b	 Error: Cannot set headers after they are sent to the client	DELETE	/users	undefined 
+2023-06-14		14:17:04	36331bd9-c6c7-4152-81a1-644dd8a513d0	 Error: Cannot set headers after they are sent to the client	DELETE	/users	undefined 
+2023-06-14		14:17:07	4b6dc3fa-cefd-4184-83ad-d3e4fd5ee2b9	 Error: Cannot set headers after they are sent to the client	DELETE	/users	undefined 

@@ -8,18 +8,25 @@ const getAllNotes = asyncHandler(async (req, res) => {
   if (!notes?.length)
     return res.status(400).json({ message: "No notes found" });
 
-  // Add username to each note before sending the response
-  // We want to use Promise.all with map()
-  // We could also do this with a for...of loop
-
-  const notesWithUser = await Promise.all(
-    notes.map(async (note) => {
-      const user = User.findById(note.user).lean().exec();
-      return { ...note, username: user.username };
-    })
-  );
-  res.status(200).json(notesWithUser);
+  try {
+    const notesWithUser = await Promise.all(
+      notes.map(async (note) => {
+        const user = await User.findById(note.user).lean().exec();
+        if (user && user.username) {
+          return { ...note, username: user.username };
+        } else {
+          // Handle the case where the user is not found or doesn't have a username
+          return { ...note, username: "Unknown" };
+        }
+      })
+    );
+    res.json(notesWithUser);
+  } catch (error) {
+    // Handle any errors that occur during the database query
+    res.status(500).json({ message: "Internal Server Error" });
+  }
 });
+
 
 // to create a new notes, we need to make post request, the route is gonna be /note and must be private
 const createNewNote = asyncHandler(async (req, res) => {

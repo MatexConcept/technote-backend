@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser')
 const ConnectDb = require('./config/dbConnect')
 
 
-const PORT = process.env.PORT || 5555
+const PORT = process.env.PORT || 9999
 
 console.log(process.env.NODE_ENV)
 
@@ -27,7 +27,7 @@ app.use(cookieParser())
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.use('/', require('./routes/root'))
-
+app.use('/auth', require("./routes/authRoute"))
 app.use('/users', require("./routes/userRoutes"))
 app.use('/notes', require("./routes/noteRoutes"))
 
